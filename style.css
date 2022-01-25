@@ -11,7 +11,15 @@ h1{
 .row{
   text-align: center;
 }
-#slay{
-  padding-top: 2000px;
-  text-align: center;
+#info{
+  border-style: dashed;
+  padding: 10px;
+  box-shadow:2px 2px 5px black;
+}
+
+#buttons:hover{
+    box-shadow:2px 2px 5px black;
+}
+.qoute{
+  font-size: 17px;
 }
