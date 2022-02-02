@@ -27,7 +27,7 @@
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="text" placeholder="Type Here">
-          <button class="btn btn-primary" type="button">Search</button>
+          <button class="btn btn-info" type="button">Search</button>
         </form>
       </div>
     </div>
@@ -155,7 +155,7 @@
 <div class="container-fluid mt-3">
   <div class="row">
     <div class="col p-1-sm">
-        <button type="button" class="btn btn-outline-dark">
+        <button type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" title="YAYYYYYYYYYYYYYY!">
           Click on me!
           <span class="badge bg-secondary">Or dont</span>
         </button>
@@ -198,5 +198,11 @@
   </div>
 </div>
 
+<script>
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
   </body>
 </html>
