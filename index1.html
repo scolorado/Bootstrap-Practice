@@ -56,7 +56,29 @@
     </div>
   </div>
 </div>
-
+<div class="container-fluid mt-3">
+  <form action="/action_page.php" class="was-validated">
+    <div class="mb-3 mt-3">
+      <label for="uname" class="form-label">Your Name:</label>
+      <input type="text" class="form-control" id="uname" placeholder="Enter your name" name="uname" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please put in your name.</div>
+    </div>
+    <div class="mb-3">
+      <label for="pwd" class="form-control" id="pwd" placeholder="Enter password" Name="pswd" required>Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter Password" name="pswd" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback"> Please put in your password.</div>
+    </div>
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+      <label class="form-check-label" for="myCheck">I am a real human.</label>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Check this box to continue.</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
 <div class="container-fluid mt-3">
   <div class="row">
     <div class="col p-1-sm">
