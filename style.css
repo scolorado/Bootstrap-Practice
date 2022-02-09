@@ -22,3 +22,10 @@ h1{
 .qoute{
   font-size: 17px;
 }
+.card{
+  color: black !important;
+}
+.dark-mode{
+  background-color: #3e4a94;
+  color: white
+}
