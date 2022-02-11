@@ -27,5 +27,13 @@ h1{
 }
 .dark-mode{
   background-color: #3e4a94;
-  color: white
+  color: white;
+}
+.carousel{
+  width: 640px;
+  height:360px;
+}
+#cover{
+  width: 50px;
+  height:450px;
 }
