@@ -35,10 +35,9 @@
     </div>
   </nav>
 </div>
-</br>
-
+<br><br>
 <div class="container-fluid mt-3">
-  <h1 class="display-1">Welcome</h1>
+  <h1 class="display-1" data-bs-toggle="tooltip" title="Welcome to my Page!!!!">Welcome</h1>
   <div class="row" id="nav">
     <div id="buttons" class="col p-3 bg-dark text-white">#live</div>
     <div id="buttons" class="col p-3 bg-light text-dark">#love</div>
@@ -199,6 +198,11 @@
   </ul>
 </div>
 
-
+<script>
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
   </body>
 </html>
