@@ -166,7 +166,24 @@
 
 <br>
 <div class="container-fluid mt 3">
+  <div class="row">
+    <div class="col p-3 sm">
   <button type="button" class="btn btn-dark" data-bs-toggle="popover" title="Latin of course!" data-bs-content="Latin helped create many of the languaged that we speak today and would not be possible to be wrting this without Latin!">Best language ever?</button>
+</div>
+<div class="col p-3 sm">
+  <button type="button" class="btn btn-dark" id="toastbtn">Toast here</button>
+  <div class="toast">
+    <div class="toast-header">
+      <strong class="me-auto"> What place is best for me?</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      <p>The best places, sometimes may not be the beach. These can be cities or other places, depending what you are looking for. If you want quiet, the beach might be the place. But if you want a fun and exciting vacation, a busy city might be just the place for you.</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
 </div>
 <br>
 
@@ -211,6 +228,13 @@ var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl)
 })
+document.getElementById("toastbtn").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show())
+}
 </script>
   </body>
 </html>

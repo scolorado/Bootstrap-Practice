@@ -121,6 +121,18 @@ As political power shifted to Constantinople, the church gradually replaced the 
         </div>
       </div>
     </div>
+    <div class="col p-3 sm">
+      <button type="button" class="btn btn-dark" id="toastbtn">Toast here</button>
+      <div class="toast">
+        <div class="toast-header">
+          <strong class="me-auto">The Colosseum </strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">
+          <p>The Colosseum is an oval amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheatre ever built, and is still the largest standing amphitheatre in the world today, despite its age</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <div class="container-fluid mt-3">
@@ -473,6 +485,13 @@ var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl)
 })
+document.getElementById("toastbtn").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show())
+}
 </script>
 </body>
 </html>
