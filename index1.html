@@ -168,7 +168,7 @@ As political power shifted to Constantinople, the church gradually replaced the 
     <div class="col p-1 sm">
       <span class="badge bg-secondary">SLAYYYYYYYY</span>
     </div>
-    <div class="col p-6-sm">
+    <div class="col p-5-sm">
       <div class="btn-group">
         <button type="button" class="btn btn-outline-dark"> Italy </button>
         <button type="button" class="btn btn-outline-dark"> Greece </button>
@@ -191,6 +191,10 @@ As political power shifted to Constantinople, the church gradually replaced the 
           <li><a class="dropdown-item" href="#">slayyyy</a></li>
         </ul>
       </div>
+    </div>
+    <div class="col p-1 sm">
+      <button type="button" class="btn btn-dark" data-bs-toggle="popover" title="Why Roman?" data-bs-content="The Roman and Greek empires were very infulential and important, but the Romans dominated the ancient world. ">Roman vs.Greek</button>
+    </div>
     </div>
   </div>
 </div>
@@ -417,6 +421,28 @@ That's my man
   </div>
 </div>
 </div>
+
+
+<br>
+
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col p-2 sm">
+      <div class="toast show">
+        <div class="toast-header">
+           <strong class="me-auto">Don't be afraid to research on your own!</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+          </div>
+          <div class="toast-body">
+            <p>There is a lot of work about the Romans throughout history, including from mnay different points of views, and all kinds of people. Although some of the evidence might be contradictory, look at what would make the most sense, and try to see if one groupd would have motivation to say anything (such as lie).</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
 <br>
 <div class="container mt-3">
   <ul class="pagination justify-content-center">
@@ -442,6 +468,10 @@ That's my man
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
 })
 </script>
 </body>

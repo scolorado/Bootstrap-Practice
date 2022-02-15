@@ -162,8 +162,12 @@
   <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
   <strong> Hey you!</strong> be sure to check everything on this page out!
 </div>
-</div
+</div>
 
+<br>
+<div class="container-fluid mt 3">
+  <button type="button" class="btn btn-dark" data-bs-toggle="popover" title="Latin of course!" data-bs-content="Latin helped create many of the languaged that we speak today and would not be possible to be wrting this without Latin!">Best language ever?</button>
+</div>
 <br>
 
 <div class="container-fluid mt 3">
@@ -202,6 +206,10 @@
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
 })
 </script>
   </body>
