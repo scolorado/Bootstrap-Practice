@@ -24,29 +24,41 @@
       </div>
     </nav>
 
-    <div class="offcanvas offcanvas-start" id="demo">
-      <div class="offcanvas-header">
-        <h1 class="offcanvas-title">Heading</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-      </div>
-      <div class="offcanvas-body">
-        <p></p>
-        <button class="btn btn-dark" type="button">Click here to return to orginial page</button>
-      </div>
-    </div>
     <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
       Open Offcanvas Sidebar
     </button>
-
-    <div id="section1" class="container-fluid bg-infromation text-white" style="padding:100px 20px;">
+    <div id="section1" class="container-fluid bg-infromation text-dark" style="padding:100px 20px;">
       <h1></h1>
       <p></p>
+      <div class="offcanvas offcanvas-start" id="demo">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title">Links to the other pages.</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p> In order to get back to other pages, just click on the page you have desired.</p>
+          <ul class="pages">
+            <li>
+              <a class="pagetext" href="index.html">Home Page</a>
+            </li>
+            <li>
+              <a class="pagetext" href="index1.html">Contact Page</a>
+            </li>
+            <li>
+              <a class="pagetext" href="index2.html">Girlboss Page</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+        Open Offcanvas Sidebar
+      </button>
     </div>
     <div id="section2" class="container-fluid bg-white text-dark" style="padding:100px 20px;">
       <h1></h1>
       <p></p>
     </div>
-    <div id="section3" class="container-fluid bg-infromation text-white" style="padding:100px 20px;">
+    <div id="section3" class="container-fluid bg-infromation text-dark" style="padding:100px 20px;">
       <h1></h1>
       <p></p>
     </div>
