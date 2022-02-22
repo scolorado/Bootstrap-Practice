@@ -53,3 +53,7 @@ h1{
   color: black;
   padding: 5px;
 }
+#section1, #section2, #section3{
+  padding: 20px;
+  margin: 15px;
+}
